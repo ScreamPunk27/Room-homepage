@@ -175,7 +175,7 @@ picture img{
 }
 
 .shop{
-    display: inline-block;
+    display: flex;
     margin-top: 1.5rem;
     letter-spacing: .8rem;
     text-transform: uppercase;
@@ -184,6 +184,25 @@ picture img{
     transition: color .2s ease-in;
     cursor: pointer;
 }
+
+.arrows{
+    position: relative;
+    display: flex;
+}
+
+.arrow-black{
+   position: absolute;
+   visibility: visible;
+   transition: visibility .2s ease-in;
+}
+
+.arrow-grey{
+    position: absolute;
+}
+
+.shop:hover .arrow-black{
+    visibility: hidden;
+ }
 
 .shop:hover{
     color: var(--darkGray);
@@ -219,6 +238,7 @@ picture img{
     }
 
     main{
+        height: 60%;
     }
 
     .home{
@@ -249,7 +269,11 @@ picture img{
     }
 
     nav{
+        position: fixed;
+        height: 50px;
         justify-content:left;
+        padding: 0;
+        margin: 3rem 0 0 2rem;
     }
 
     .nav__hamburger{
@@ -257,7 +281,7 @@ picture img{
     }
 
     .nav__links{
-        margin-left: 25rem;
+        margin-left: 20rem;
     }
 
     .menu{
@@ -286,6 +310,7 @@ picture img{
 
     /*FURNITURE SECTION*/
     .furniture{
+        height: 40%;
         display: flex;
     }
 
