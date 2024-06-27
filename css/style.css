@@ -70,17 +70,13 @@ button img{
 
 /*HOME SLIDER*/
 
-.home{
-    display: flex;
-}
+
 
 .home__slider{
     position: relative;
-    width: 60%;
 }
 
 .home__info{
-    width: 40%;
     padding: 5rem 2rem;
 }
 
@@ -223,23 +219,33 @@ picture img{
     }
 
     main{
-        height: 60%;
+    }
+
+    .home{
+        height: 100%;
+        display: flex;
     }
     
     /*HOME SLIDER*/
+    .home__slider{
+        height: 100%;
+        width: 60%;
+    }
+
     .home__info{
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 4rem;
+        padding: 0 2rem;
     }
 
     .buttons{
-        right: -10.5%;
+        
     }
 
     .slider{
-        height: 400px;
+        height: 100%;
     }
 
     nav{
@@ -280,7 +286,6 @@ picture img{
 
     /*FURNITURE SECTION*/
     .furniture{
-        height: 40%;
         display: flex;
     }
 
